@@ -1,0 +1,237 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --hoverTextcolor: rgb(244, 51, 151);
+            --textcolor: rgb(87, 85, 85);
+        }
+        
+        body {
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(36, 35, 35);
+            position: fixed;
+        }
+        
+        img {
+            width: 70%;
+        }
+        
+        .header {
+            height: 80px;
+            outline: 1px solid silver;
+            padding: 1px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 400;
+        }
+        
+        .headerLeft,
+        .headerRight {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logocontainer {
+            width: 250px;
+        }
+        
+        .searchInputcontainer {
+            width: 400px;
+            height: 45px;
+            outline: 1px solid rgb(101, 99, 99);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 40px;
+            margin-right: 20px;
+            border-radius: 3px;
+        }
+        
+        .searchIcon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 80px;
+        }
+        
+        .inputsearch {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            position: relative;
+            right: 80px;
+        }
+        
+        #closeSearch {
+            display: none;
+        }
+        
+        .searchRecentModal {
+            position: absolute;
+            padding: 0 10px;
+            bottom: 0%;
+            left: 0%;
+            top: 42px;
+            background-color: white;
+            height: 200px;
+            width: 100%;
+            padding: 10px;
+            display: none;
+            border-radius: 7px;
+            box-shadow: 0px 0px 5px rgb(15, 14, 14);
+        }
+        
+        .searchInputcontainer:focus-within.searchRecentModal {
+            display: flex;
+            width: 100%;
+        }
+        
+        .recentIcon {
+            width: 20px;
+            position: relative;
+            top: 3px;
+        }
+        
+        .recentItem {
+            display: flex;
+            align-items: center;
+        }
+        
+        .mobileIcon {
+            height: 30px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            outline: black;
+        }
+        
+        .downloadcontainer {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-left: 200px;
+        }
+        
+        .downloadcontainer:hover {
+            color: var(--hoverTextcolor);
+        }
+        
+        .downloadcontainer p {
+            margin: 0%;
+            padding: 0%;
+            font-size: 17px;
+        }
+        
+        .profileAndCart {
+            display: flex;
+            align-items: center;
+        }
+        
+        .profileIcon,
+        .CartIcon {
+            width: 30px;
+        }
+        
+        .profileAndCart p {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .porfilecontainer,
+        .cartcontainer {
+            padding: 30px;
+            display: inline;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+        }
+        
+        .profileIcon {
+            position: relative;
+            left: 8px;
+        }
+        
+        .CartIcon {
+            position: relative;
+            top: 15px;
+        }
+        
+        .porfilecontainer {
+            position: relative;
+            left: 10px;
+        }
+        
+        .downloadcontainer {
+            padding: 40px;
+        }
+        
+        .bacomeseleerContainer {
+            padding: 0px 30px;
+            border-left: 3px solid #ccc;
+        }
+        
+        .Newsroom {
+            padding: 0px 40px;
+            border-right: 3px solid #ccc;
+            border-left: 3px solid #ccc;
+        }
+        /**navigation css***/
+        
+        nav {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid#ccc
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+            height: 100%;
+            margin: 0%;
+            position: relative;
+        }
+        
+        nav ul li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0%;
+            border-bottom: 3px solid solid transparent;
+            cursor: pointer;
+        }
+        
+        nav ul li:hover {
+            color: var(--hoverTextcolor);
+            border-bottom: 4px solid var(--hoverTextcolor);
+        }
+        
+        .subMenu {
+            position: absolute;
+            width: 100vw;
+            height: 300px;
+            top: 50px;
+            right: 0;
+            left: 0%;
+            background-color: white;
+            border: 1px solid#ccc;
+            box-sizing: border-box;
+            display: none;
+            margin: 0px 10px;
+            box-shadow: 1px 1px 3px rbg(0, 0, 0.3);
+        }
+        
+        nav ul .subMenu
